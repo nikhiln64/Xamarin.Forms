@@ -32,11 +32,11 @@
             </Entry>
             <StackLayout Orientation="Horizontal">
                 <Entry x:Name="passwordEntry" IsPassword="true" Placeholder="Password" WidthRequest="230" HeightRequest="50"/>
-                <Button x:Name="eyeButton" Clicked="On_Eye_Button_Clicked" Image="eye.png" WidthRequest="50" HeightRequest="50"/>
+                <Button x:Name="eyeButton" Clicked="On_Eye_Button_Clicked" Image="eye.png" WidthRequest="50" HeightRequest="50" BackgroundColor="Transparent"/>
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <Entry x:Name="retypePasswordEntry" IsPassword="true" Placeholder="Re-type" WidthRequest="230" HeightRequest="50"/>
-                <Button x:Name="retypeEyeButton" Clicked="On_Retype_Eye_Button_Clicked" Image="eye.png" WidthRequest="50" HeightRequest="50"/>
+                <Button x:Name="retypeEyeButton" Clicked="On_Retype_Eye_Button_Clicked" Image="eye.png" WidthRequest="50" HeightRequest="50" BackgroundColor="Transparent"/>
             </StackLayout>
             <Label x:Name="errorLabel"/>
                 <Button x:Name="signUpButton" Text="Sign Up" Clicked="Signup_Button_Clicked" WidthRequest="180"></Button>
