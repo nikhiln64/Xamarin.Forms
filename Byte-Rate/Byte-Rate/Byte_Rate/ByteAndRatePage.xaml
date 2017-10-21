@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Byte_Rate.ByteAndRatePage">
+    <ContentPage.Content>
+        <StackLayout  VerticalOptions="CenterAndExpand" Padding="40">
+            <Label  x:Name="titleLabel" Text="Welcome to Byte and Rate" VerticalOptions="CenterAndExpand"  HorizontalOptions="CenterAndExpand" />
+            <Label x:Name="captionLabel" Text="CHECK, DECIDE, EAT, ENJOY and SHARE" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" />
+            <Label x:Name="signUpLabel" Text="Sign up using" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" />
+            <StackLayout  Orientation="Horizontal" Padding="80,0,0,0">
+                <Button x:Name="facebookSignUpButton" Clicked="FacebookSignUpButton_Clicked" Image="facebook1.png" WidthRequest="40" BackgroundColor="Transparent"></Button>
+                <Button  x:Name="googleSignUpButton" Clicked="GoogleSignUpButton_Clicked" Image="google1.png" WidthRequest="40" BackgroundColor="Transparent"></Button>
+                <Button  x:Name="phoneSignUpButton" Clicked="PhoneSignUpButton_Clicked" Image="phone.png" WidthRequest="40" BackgroundColor="Transparent"></Button>
+            </StackLayout>
+            <StackLayout  Orientation="Horizontal">
+                <Label x:Name="haveAccountLabel" Text="Have an account?" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" />
+                <Button  x:Name="loginButton" Clicked="LoginButton_Clicked" Text="Login"></Button>
+            </StackLayout>
+            <StackLayout  Orientation="Horizontal">
+                <Label x:Name="skipLaebl" Text="Just explore and satisfy your palete?" VerticalOptions="EndAndExpand" HorizontalOptions="CenterAndExpand" />
+                <Button  x:Name="skipButton" Clicked="SkipButton_Clicked" Text="Skip"></Button>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

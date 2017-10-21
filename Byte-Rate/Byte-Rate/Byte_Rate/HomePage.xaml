@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+              xmlns:maps="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps"
+             x:Class="Byte_Rate.HomePage">
+        <ContentPage.Content>
+                <Grid>
+            <maps:Map x:Name="MyMap"
+                         MapType="Street"/>
+            <StackLayout VerticalOptions="StartAndExpand" HorizontalOptions="Start">
+                <SearchBar Placeholder="Search" SearchButtonPressed="Search_Button_Clicked"></SearchBar>
+            </StackLayout>
+            <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="End" Padding="0,250,10,0">
+                <Button x:Name="getCurrentLocation" Clicked="getCurrentLocation_Clicked" WidthRequest="50" Image="mylocation.png" BackgroundColor="Transparent"/>
+            </StackLayout>
+        </Grid>
+        
+            
+        </ContentPage.Content>
+
+    
+
+
+
+
+</ContentPage>

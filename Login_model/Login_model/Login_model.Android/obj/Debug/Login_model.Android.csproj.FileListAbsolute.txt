@@ -51,3 +51,6 @@ C:\Users\nramashasthri\source\repos\Login_model\Login_model\Login_model.Android\
 C:\Users\nramashasthri\source\repos\Login_model\Login_model\Login_model.Android\obj\Debug\android\assets\Xamarin.Forms.Core.dll.mdb
 C:\Users\nramashasthri\source\repos\Login_model\Login_model\Login_model.Android\obj\Debug\android\assets\Xamarin.Forms.Platform.Android.dll.mdb
 C:\Users\nramashasthri\source\repos\Login_model\Login_model\Login_model.Android\obj\Debug\android\assets\Xamarin.Forms.Xaml.dll.mdb
+D:\WORK RELATED\GIT HUB\Xamarin.Forms\Login_model\Login_model\Login_model.Android\obj\Debug\Login_model.Android.csprojResolveAssemblyReference.cache
+D:\WORK RELATED\GIT HUB\Xamarin.Forms\Login_model\Login_model\Login_model.Android\obj\Debug\Login_model.Android.dll
+D:\WORK RELATED\GIT HUB\Xamarin.Forms\Login_model\Login_model\Login_model.Android\obj\Debug\Login_model.Android.pdb

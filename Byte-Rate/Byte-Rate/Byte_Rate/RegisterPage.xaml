@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:behaviors="clr-namespace:Byte_Rate.Validation_Classes"
+             x:Class="Byte_Rate.RegisterPage"
+             Title="Registration">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="Start" Padding="40">
+            <Picker x:Name="CountryCodePicker" Title="Select Country" HeightRequest="50"></Picker>
+
+            <StackLayout Orientation="Horizontal">
+                <Entry x:Name="firstNameEntry" Placeholder="First Name" WidthRequest="140" HeightRequest="50">
+                    <Entry.Behaviors>
+                        <behaviors:MaximumLengthValidation MaxLength="15" />
+                    </Entry.Behaviors>
+                </Entry>
+                <Entry x:Name="lastNameEntry" Placeholder="Last Name" WidthRequest="140" HeightRequest="50">
+                    <Entry.Behaviors>
+                        <behaviors:MaximumLengthValidation MaxLength="15" />
+                    </Entry.Behaviors>
+                </Entry>
+            </StackLayout>
+            <Entry x:Name="emailAddressEntry" Placeholder="Email Address" Keyboard="Email" HeightRequest="50">
+                <Entry.Behaviors>
+                    <behaviors:EmailAddressValidation />
+                </Entry.Behaviors>
+            </Entry>
+            <Entry x:Name="mobileNumberEntry" Keyboard="Telephone" Placeholder="Mobile Number" HeightRequest="50">
+                <Entry.Behaviors>
+                    <behaviors:MaximumLengthValidation MaxLength="10" />
+                </Entry.Behaviors>
+            </Entry>
+            <StackLayout Orientation="Horizontal">
+                <Entry x:Name="passwordEntry" IsPassword="true" Placeholder="Password" WidthRequest="230" HeightRequest="50"/>
+                <Button x:Name="eyeButton" Clicked="On_Eye_Button_Clicked" Image="eye.png" WidthRequest="50" HeightRequest="50"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Entry x:Name="retypePasswordEntry" IsPassword="true" Placeholder="Re-type" WidthRequest="230" HeightRequest="50"/>
+                <Button x:Name="retypeEyeButton" Clicked="On_Retype_Eye_Button_Clicked" Image="eye.png" WidthRequest="50" HeightRequest="50"/>
+            </StackLayout>
+            <Label x:Name="errorLabel"/>
+                <Button x:Name="signUpButton" Text="Sign Up" Clicked="Signup_Button_Clicked" WidthRequest="180"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

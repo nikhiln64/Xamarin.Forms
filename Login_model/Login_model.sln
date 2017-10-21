@@ -16,6 +16,7 @@ Global
 		Login_model\Login_model\Login_model.projitems*{31ef1d36-a859-4258-beb2-6c7368856a04}*SharedItemsImports = 4
 		Login_model\Login_model\Login_model.projitems*{4302cee3-994e-48f7-88e0-e955116eb015}*SharedItemsImports = 13
 		Login_model\Login_model\Login_model.projitems*{ba76bd7b-11c1-4dc1-8cb4-74f5f0ed5be8}*SharedItemsImports = 4
+		Login_model\Login_model\Login_model.projitems*{d688b9ec-5bbd-4a4c-b523-91c03b7afd42}*SharedItemsImports = 4
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Ad-Hoc|Any CPU = Ad-Hoc|Any CPU

@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Byte_Rate.MasterDetailsPage"
+                  MasterBehavior="Popover">
+    <MasterDetailPage.Master>
+        <ContentPage Padding="10" Title="Byte And Rate">
+            <StackLayout>
+                <Button x:Name="favouritesButton" Text="Favourites" Image="favorites.png"  WidthRequest="30" HeightRequest="50" Clicked="Favourites_Button_Clicked"/>
+                <Button x:Name="trailButton" Text="Trail" Image="trial.png"  WidthRequest="30" HeightRequest="50" Clicked="Trail_Button_Clicked"/>
+                <Button x:Name="socialButton" Text="Social" Image="social.png"  WidthRequest="30" HeightRequest="50" Clicked="Social_Button_Clicked"/>
+                <Button x:Name="settingsButton" Text="Account Settings" Image="settings.png"  WidthRequest="30" HeightRequest="50" Clicked="Account_Button_Clicked"/>
+                <Button x:Name="logoutButton" Text="Logout" Image="logout.png"  WidthRequest="30" HeightRequest="50" Clicked="Logout_Button_Clicked"/>
+                <Button x:Name="helpButton" Text="Help" Image="help.png"  WidthRequest="30" HeightRequest="50" Clicked="Help_Button_Clicked"/>
+                <Button x:Name="suggestionsButton" Text="Suggestions" Image="sugesstions.png"  WidthRequest="30" HeightRequest="50" Clicked="Suggestions_Button_Clicked"/>
+            </StackLayout>
+        </ContentPage>
+    </MasterDetailPage.Master>
+
+
+    <MasterDetailPage.Detail>
+        
+    </MasterDetailPage.Detail>
+</MasterDetailPage>

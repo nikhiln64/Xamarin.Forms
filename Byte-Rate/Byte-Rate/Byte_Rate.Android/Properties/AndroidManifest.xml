@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="com.companyname.Byte_Rate" android:installLocation="preferExternal">
+	<uses-sdk android:minSdkVersion="21" />
+	<uses-permission android:name="android.permission.ACCESS_GPS" />
+	<uses-permission android:name="android.permission.ACCESS_ASSISTED_GPS" />
+	<uses-permission android:name="android.permission.ACCESS_LOCATION" />
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+	<uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+	<application android:label="Byte_Rate.Android">
+		<meta-data android:name="com.google.android.geo.API_KEY" android:value="AIzaSyA7-opnP98zttfWOUBM2B7kKuH8EKik-10" />
+		<meta-data android:name="com.google.android.gms.version" android:value="11.5.18" />
+	</application>
+</manifest>

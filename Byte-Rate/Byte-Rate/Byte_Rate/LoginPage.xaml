@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:behaviors="clr-namespace:Byte_Rate.Validation_Classes"
+             x:Class="Byte_Rate.LoginPage">
+    
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="Center" Padding="40">
+            <Picker x:Name="CountryCodePicker" Title="Select Country" HeightRequest="50"></Picker>
+            <Entry x:Name="mobileNumberEntry" Keyboard="Telephone" Placeholder="Mobile Number" HeightRequest="50">
+                <Entry.Behaviors>
+                    <behaviors:MaximumLengthValidation MaxLength="10" />
+                </Entry.Behaviors>
+            </Entry>
+            <StackLayout Orientation="Horizontal">
+                <Entry x:Name="passwordEntry" IsPassword="true" Placeholder="Password" WidthRequest="230" HeightRequest="50"/>
+                <Button x:Name="eyeButton" Clicked="On_Eye_Button_Clicked" Image="eye.png" WidthRequest="50" HeightRequest="50" BackgroundColor="Transparent"/>
+            </StackLayout>
+           
+            <Label x:Name="loginMessageLabel" />
+            <StackLayout Orientation="Horizontal">
+                <Button Text="Forgot Password?" Clicked="ForgetPwd_Button_Clicked"/>
+                <Button Text="Login" Clicked="OnLoginButtonClicked" WidthRequest="130"/>
+            </StackLayout>
+            <StackLayout VerticalOptions="EndAndExpand" Padding="60">
+                <Label x:Name="signUpLabel" Text="No account?" HorizontalOptions="CenterAndExpand" />
+                <Button Text="Sign Up" Clicked="Register_Button_Clicked"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+    
+</ContentPage>
