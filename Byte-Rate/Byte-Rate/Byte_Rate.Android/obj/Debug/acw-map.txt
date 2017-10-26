@@ -14,6 +14,14 @@ Plugin.Geolocator.GeolocationSingleListener, Plugin.Geolocator;md532601d72624fec
 Plugin.Geolocator.GeolocationSingleListener, Plugin.Geolocator, Version=4.1.1.0, Culture=neutral, PublicKeyToken=null;md532601d72624fec6471b5479741ac141f.GeolocationSingleListener
 Plugin.Geolocator.GeolocationSingleListener;md532601d72624fec6471b5479741ac141f.GeolocationSingleListener
 plugin.geolocator.GeolocationSingleListener;md532601d72624fec6471b5479741ac141f.GeolocationSingleListener
+TK.CustomMap.Droid.TKCustomMapRenderer, TK.CustomMap.Android;md59f7b7212b273caed4b6191f9ccec19f8.TKCustomMapRenderer
+TK.CustomMap.Droid.TKCustomMapRenderer, TK.CustomMap.Android, Version=1.5.1.0, Culture=neutral, PublicKeyToken=null;md59f7b7212b273caed4b6191f9ccec19f8.TKCustomMapRenderer
+TK.CustomMap.Droid.TKCustomMapRenderer;md59f7b7212b273caed4b6191f9ccec19f8.TKCustomMapRenderer
+tk.custommap.droid.TKCustomMapRenderer;md59f7b7212b273caed4b6191f9ccec19f8.TKCustomMapRenderer
+TK.CustomMap.Droid.TKCustomTileProvider, TK.CustomMap.Android;md59f7b7212b273caed4b6191f9ccec19f8.TKCustomTileProvider
+TK.CustomMap.Droid.TKCustomTileProvider, TK.CustomMap.Android, Version=1.5.1.0, Culture=neutral, PublicKeyToken=null;md59f7b7212b273caed4b6191f9ccec19f8.TKCustomTileProvider
+TK.CustomMap.Droid.TKCustomTileProvider;md59f7b7212b273caed4b6191f9ccec19f8.TKCustomTileProvider
+tk.custommap.droid.TKCustomTileProvider;md59f7b7212b273caed4b6191f9ccec19f8.TKCustomTileProvider
 Android.Support.V4.Widget.SearchViewCompat/IOnCloseListenerImplementor, Xamarin.Android.Support.Compat;mono.android.support.v4.widget.SearchViewCompat_OnCloseListenerImplementor
 Android.Support.V4.Widget.SearchViewCompat+IOnCloseListenerImplementor, Xamarin.Android.Support.Compat, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;mono.android.support.v4.widget.SearchViewCompat_OnCloseListenerImplementor
 Android.Support.V4.Widget.SearchViewCompat.IOnCloseListenerImplementor;mono.android.support.v4.widget.SearchViewCompat_OnCloseListenerImplementor
@@ -818,3 +826,11 @@ Android.Gms.Maps.StreetViewPanorama/IOnStreetViewPanoramaLongClickListenerImplem
 Android.Gms.Maps.StreetViewPanorama+IOnStreetViewPanoramaLongClickListenerImplementor, Xamarin.GooglePlayServices.Maps, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;mono.com.google.android.gms.maps.StreetViewPanorama_OnStreetViewPanoramaLongClickListenerImplementor
 Android.Gms.Maps.StreetViewPanorama.IOnStreetViewPanoramaLongClickListenerImplementor;mono.com.google.android.gms.maps.StreetViewPanorama_OnStreetViewPanoramaLongClickListenerImplementor
 mono.com.google.android.gms.maps.StreetViewPanorama_OnStreetViewPanoramaLongClickListenerImplementor;mono.com.google.android.gms.maps.StreetViewPanorama_OnStreetViewPanoramaLongClickListenerImplementor
+Android.Gms.Location.LocationListener, Xamarin.GooglePlayServices.Location;md5c3f794aca97c55dc0e6d5992e563f700.LocationListener
+Android.Gms.Location.LocationListener, Xamarin.GooglePlayServices.Location, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5c3f794aca97c55dc0e6d5992e563f700.LocationListener
+Android.Gms.Location.LocationListener;md5c3f794aca97c55dc0e6d5992e563f700.LocationListener
+android.gms.location.LocationListener;md5c3f794aca97c55dc0e6d5992e563f700.LocationListener
+Android.Gms.Location.ILocationListenerImplementor, Xamarin.GooglePlayServices.Location;mono.com.google.android.gms.location.LocationListenerImplementor
+Android.Gms.Location.ILocationListenerImplementor, Xamarin.GooglePlayServices.Location, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;mono.com.google.android.gms.location.LocationListenerImplementor
+Android.Gms.Location.ILocationListenerImplementor;mono.com.google.android.gms.location.LocationListenerImplementor
+mono.com.google.android.gms.location.LocationListenerImplementor;mono.com.google.android.gms.location.LocationListenerImplementor

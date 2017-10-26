@@ -110,6 +110,9 @@ C:\Users\Nikki\source\repos\Byte-Rate\Byte-Rate\Byte_Rate.Android\obj\Debug\Byte
 C:\Users\Nikki\source\repos\Byte-Rate\Byte-Rate\Byte_Rate.Android\obj\Debug\Byte_Rate.Droid.MasterDetailsPage.xaml.g.cs
 C:\Users\Nikki\source\repos\Byte-Rate\Byte-Rate\Byte_Rate.Android\obj\Debug\res\drawable\eyeclose.png
 C:\Users\Nikki\source\repos\Byte-Rate\Byte-Rate\Byte_Rate.Android\obj\Debug\Byte_Rate.Droid.ByteAndRatePage.xaml.g.cs
+C:\Users\Nikki\source\repos\Byte-Rate\Byte-Rate\Byte_Rate.Android\obj\Debug\res\drawable\phone.png
+C:\Users\Nikki\source\repos\Byte-Rate\Byte-Rate\Byte_Rate.Android\obj\Debug\res\drawable\mylocation.png
+C:\Users\Nikki\source\repos\Byte-Rate\Byte-Rate\Byte_Rate.Android\obj\Debug\Byte_Rate.Android.csprojResolveAssemblyReference.cache
 C:\Users\Nikki\source\repos\Byte-Rate\Byte-Rate\Byte_Rate.Android\bin\Debug\Byte_Rate.Android.dll.mdb
 C:\Users\Nikki\source\repos\Byte-Rate\Byte-Rate\Byte_Rate.Android\obj\Debug\android\assets\Byte_Rate.Android.dll.mdb
 C:\Users\Nikki\source\repos\Byte-Rate\Byte-Rate\Byte_Rate.Android\obj\Debug\android\assets\FormsViewGroup.dll.mdb
@@ -119,6 +122,11 @@ C:\Users\Nikki\source\repos\Byte-Rate\Byte-Rate\Byte_Rate.Android\obj\Debug\andr
 C:\Users\Nikki\source\repos\Byte-Rate\Byte-Rate\Byte_Rate.Android\obj\Debug\android\assets\Xamarin.Forms.Platform.Android.dll.mdb
 C:\Users\Nikki\source\repos\Byte-Rate\Byte-Rate\Byte_Rate.Android\obj\Debug\android\assets\Xamarin.Forms.Xaml.dll.mdb
 C:\Users\Nikki\source\repos\Byte-Rate\Byte-Rate\Byte_Rate.Android\obj\Debug\android\assets\Xamarin.iOS.dll.mdb
-C:\Users\Nikki\source\repos\Byte-Rate\Byte-Rate\Byte_Rate.Android\obj\Debug\Byte_Rate.Android.csprojResolveAssemblyReference.cache
-C:\Users\Nikki\source\repos\Byte-Rate\Byte-Rate\Byte_Rate.Android\obj\Debug\res\drawable\phone.png
-C:\Users\Nikki\source\repos\Byte-Rate\Byte-Rate\Byte_Rate.Android\obj\Debug\res\drawable\mylocation.png
+C:\Users\Nikki\source\repos\Byte-Rate\Byte-Rate\Byte_Rate.Android\obj\Debug\XbdMerge\Xamarin.GooglePlayServices.Location.dll
+C:\Users\Nikki\source\repos\Byte-Rate\Byte-Rate\Byte_Rate.Android\bin\Debug\Byte_Rate.Android.dll.config
+C:\Users\Nikki\source\repos\Byte-Rate\Byte-Rate\Byte_Rate.Android\bin\Debug\TK.CustomMap.Android.dll
+C:\Users\Nikki\source\repos\Byte-Rate\Byte-Rate\Byte_Rate.Android\bin\Debug\TK.CustomMap.dll
+C:\Users\Nikki\source\repos\Byte-Rate\Byte-Rate\Byte_Rate.Android\bin\Debug\Xamarin.GooglePlayServices.Location.dll
+C:\Users\Nikki\source\repos\Byte-Rate\Byte-Rate\Byte_Rate.Android\bin\Debug\TK.CustomMap.xml
+C:\Users\Nikki\source\repos\Byte-Rate\Byte-Rate\Byte_Rate.Android\bin\Debug\TK.CustomMap.Android.xml
+C:\Users\Nikki\source\repos\Byte-Rate\Byte-Rate\Byte_Rate.Android\obj\Debug\res\drawable\restaurant.png

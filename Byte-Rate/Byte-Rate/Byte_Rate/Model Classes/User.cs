@@ -4,20 +4,21 @@ using System.Text;
 
 namespace Byte_Rate.Model_Classes
 {
-    class User
+    public class User
     {
-        public string FirstName { get; set; }
+        public string id { get; set; }
 
-        public string LastName { get; set; }
+        public string firstName { get; set; }
 
-        public string MiddleName { get; set; }
+        public string lastName { get; set; }
 
-        public string Email { get; set; }
+        public string gender { get; set; }
+
+        public Photo photo { get; set; }
 
         public long MobileNumber { get; set; }
 
         public string Password { get; set; }
 
-        public DateTime TimeStamp { get; set; }
     }
 }

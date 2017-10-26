@@ -1,4 +1,5 @@
-﻿using Plugin.Geolocator;
+﻿using Byte_Rate.Model_Classes;
+using Plugin.Geolocator;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,6 +8,9 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Maps;
 using Xamarin.Forms.Xaml;
+using Plugin.Geolocator.Abstractions;
+using Newtonsoft.Json;
+using System.Net.Http;
 
 namespace Byte_Rate
 {
@@ -35,13 +39,42 @@ namespace Byte_Rate
             locator.DesiredAccuracy = 1;
             TimeSpan ts = new TimeSpan((Int32)10000);
             var position = await locator.GetPositionAsync(timeout: ts);
-            MyMap.MoveToRegion(MapSpan.FromCenterAndRadius(new Position(position.Latitude, position.Longitude), Distance.FromMiles(1)));
+            MyMap.MoveToRegion(MapSpan.FromCenterAndRadius(new Xamarin.Forms.Maps.Position(position.Latitude, position.Longitude), Distance.FromMiles(1)));
             var pin = new Pin()
             {
-                Position = new Position(position.Latitude, position.Longitude),
+                Position = new Xamarin.Forms.Maps.Position(position.Latitude, position.Longitude),
                 Label = "You"
             };
             MyMap.Pins.Add(pin);
+            NearByRestaurents placesApiQueryResponse = await GetNeraByRestaurentsAsync(position);
+            List<Pin> pins = GetPins(placesApiQueryResponse);
+            foreach (Pin eachPin in pins) {
+                MyMap.Pins.Add(eachPin);
+            }
+        }
+
+        private List<Pin> GetPins(NearByRestaurents placesApiQueryResponse)
+        {
+            List<Pin> pins = new List<Pin>();
+            foreach (Groups groups in placesApiQueryResponse.response.groups){
+                foreach (Items item in groups.items) {
+                    var pin = new Pin()
+                    {
+                        Position = new Xamarin.Forms.Maps.Position(item.venue.location.lat, item.venue.location.lng),
+                        Label = item.venue.name
+                    };
+                    pins.Add(pin);
+                }
+            }
+            return pins;
+        }
+
+        private async Task<NearByRestaurents> GetNeraByRestaurentsAsync(Plugin.Geolocator.Abstractions.Position position)
+        {
+            var client = new HttpClient();
+            var response = await client.GetStringAsync("https://api.foursquare.com/v2/venues/explore?ll=" + position.Latitude + "," +position.Longitude + "&client_id="+Constants.client_id +"&client_secret="+Constants.client_secret + "&v=20171025&section=food,drinks,coffee&limit=10");
+            var result = JsonConvert.DeserializeObject<NearByRestaurents>(response);
+            return result;
         }
 
         private void Restaurent_Button_Clicked(object sender, EventArgs e)

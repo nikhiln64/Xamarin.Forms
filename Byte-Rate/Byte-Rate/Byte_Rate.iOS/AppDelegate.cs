@@ -4,6 +4,7 @@ using System.Linq;
 
 using Foundation;
 using UIKit;
+using TK.CustomMap.iOSUnified;
 
 namespace Byte_Rate.iOS
 {
@@ -23,8 +24,11 @@ namespace Byte_Rate.iOS
 		public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 		{
 			global::Xamarin.Forms.Forms.Init ();
-			LoadApplication (new Byte_Rate.App ());
             global::Xamarin.FormsMaps.Init();
+            TKCustomMapRenderer.InitMapRenderer();
+            NativePlacesApi.Init();
+
+            LoadApplication (new Byte_Rate.App ());
             return base.FinishedLaunching (app, options);
 		}
 	}

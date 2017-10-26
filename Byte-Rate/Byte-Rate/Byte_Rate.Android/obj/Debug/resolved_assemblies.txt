@@ -8,6 +8,8 @@ C:\Users\Nikki\source\repos\Byte-Rate\Byte-Rate\Byte_Rate.Android\obj\Debug\andr
 C:\Users\Nikki\source\repos\Byte-Rate\Byte-Rate\Byte_Rate.Android\obj\Debug\android\assets\Plugin.Geolocator.dll
 C:\Users\Nikki\source\repos\Byte-Rate\Byte-Rate\Byte_Rate.Android\obj\Debug\android\assets\Plugin.Permissions.Abstractions.dll
 C:\Users\Nikki\source\repos\Byte-Rate\Byte-Rate\Byte_Rate.Android\obj\Debug\android\assets\Plugin.Permissions.dll
+C:\Users\Nikki\source\repos\Byte-Rate\Byte-Rate\Byte_Rate.Android\obj\Debug\android\assets\TK.CustomMap.Android.dll
+C:\Users\Nikki\source\repos\Byte-Rate\Byte-Rate\Byte_Rate.Android\obj\Debug\android\assets\TK.CustomMap.dll
 C:\Users\Nikki\source\repos\Byte-Rate\Byte-Rate\Byte_Rate.Android\obj\Debug\android\assets\Xamarin.Android.Support.Animated.Vector.Drawable.dll
 C:\Users\Nikki\source\repos\Byte-Rate\Byte-Rate\Byte_Rate.Android\obj\Debug\android\assets\Xamarin.Android.Support.Annotations.dll
 C:\Users\Nikki\source\repos\Byte-Rate\Byte-Rate\Byte_Rate.Android\obj\Debug\android\assets\Xamarin.Android.Support.Compat.dll
@@ -35,6 +37,7 @@ C:\Users\Nikki\source\repos\Byte-Rate\Byte-Rate\Byte_Rate.Android\obj\Debug\andr
 C:\Users\Nikki\source\repos\Byte-Rate\Byte-Rate\Byte_Rate.Android\obj\Debug\android\assets\Xamarin.GooglePlayServices.Tasks.dll
 C:\Users\Nikki\source\repos\Byte-Rate\Byte-Rate\Byte_Rate.Android\obj\Debug\android\assets\Xamarin.GooglePlayServices.Base.dll
 C:\Users\Nikki\source\repos\Byte-Rate\Byte-Rate\Byte_Rate.Android\obj\Debug\android\assets\Xamarin.GooglePlayServices.Maps.dll
+C:\Users\Nikki\source\repos\Byte-Rate\Byte-Rate\Byte_Rate.Android\obj\Debug\android\assets\Xamarin.GooglePlayServices.Location.dll
 C:\Users\Nikki\source\repos\Byte-Rate\Byte-Rate\Byte_Rate.Android\obj\Debug\android\assets\Java.Interop.dll
 C:\Users\Nikki\source\repos\Byte-Rate\Byte-Rate\Byte_Rate.Android\obj\Debug\android\assets\Microsoft.CSharp.dll
 C:\Users\Nikki\source\repos\Byte-Rate\Byte-Rate\Byte_Rate.Android\obj\Debug\android\assets\Mono.Android.dll
@@ -78,8 +81,8 @@ C:\Users\Nikki\source\repos\Byte-Rate\Byte-Rate\Byte_Rate.Android\obj\Debug\andr
 C:\Users\Nikki\source\repos\Byte-Rate\Byte-Rate\Byte_Rate.Android\obj\Debug\android\assets\System.Xml.ReaderWriter.dll
 C:\Users\Nikki\source\repos\Byte-Rate\Byte-Rate\Byte_Rate.Android\obj\Debug\android\assets\System.Reflection.Primitives.dll
 C:\Users\Nikki\source\repos\Byte-Rate\Byte-Rate\Byte_Rate.Android\obj\Debug\android\assets\System.Text.Encoding.Extensions.dll
-C:\Users\Nikki\source\repos\Byte-Rate\Byte-Rate\Byte_Rate.Android\obj\Debug\android\assets\System.ComponentModel.dll
 C:\Users\Nikki\source\repos\Byte-Rate\Byte-Rate\Byte_Rate.Android\obj\Debug\android\assets\System.Resources.ResourceManager.dll
+C:\Users\Nikki\source\repos\Byte-Rate\Byte-Rate\Byte_Rate.Android\obj\Debug\android\assets\System.ComponentModel.dll
 C:\Users\Nikki\source\repos\Byte-Rate\Byte-Rate\Byte_Rate.Android\obj\Debug\android\assets\Mono.Security.dll
 C:\Users\Nikki\source\repos\Byte-Rate\Byte-Rate\Byte_Rate.Android\obj\Debug\android\assets\System.Collections.Concurrent.dll
 C:\Users\Nikki\source\repos\Byte-Rate\Byte-Rate\Byte_Rate.Android\obj\Debug\android\assets\System.Runtime.InteropServices.dll

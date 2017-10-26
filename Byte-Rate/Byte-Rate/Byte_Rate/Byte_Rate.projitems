@@ -44,9 +44,33 @@
       <DependentUpon>MasterDetailsPage.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Model Classes\BeenHere.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model Classes\Categories.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model Classes\Constants.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model Classes\Contact.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model Classes\CountryCodes.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model Classes\Details.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model Classes\Filters.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model Classes\Groups.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model Classes\HearNow.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model Classes\Icon.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model Classes\Items.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model Classes\Location.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model Classes\Meta.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model Classes\NearByRestaurents.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model Classes\Photo.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model Classes\Photos.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model Classes\PreciseLocation.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model Classes\Price.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model Classes\Reasons.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model Classes\Response.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model Classes\Stats.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model Classes\SuggestedBounds.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model Classes\SuggestedFilters.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model Classes\Tips.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model Classes\Todo.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model Classes\User.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model Classes\Venue.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)RegisterPage.xaml.cs">
       <DependentUpon>RegisterPage.xaml</DependentUpon>
       <SubType>Code</SubType>

@@ -30,6 +30,7 @@ namespace Byte_Rate.UWP
         {
             this.InitializeComponent();
             this.Suspending += OnSuspending;
+            Xamarin.FormsMaps.Init("AIzaSyAkb1we9h8gGMiWrzUGyLVbFlXrRCj-8YM");
         }
 
         /// <summary>
@@ -53,7 +54,7 @@ namespace Byte_Rate.UWP
             // just ensure that the window is active
             if (rootFrame == null)
             {
-                Xamarin.FormsMaps.Init("AIzaSyAkb1we9h8gGMiWrzUGyLVbFlXrRCj-8YM");
+                
                 // Create a Frame to act as the navigation context and navigate to the first page
                 rootFrame = new Frame();
 
