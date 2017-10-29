@@ -1,3 +1,7 @@
+Byte_Rate.Droid.CustomMapRenderer, Byte_Rate.Android;md58da1e510a7d21f8e64cdd8b1f8d8f39e.CustomMapRenderer
+Byte_Rate.Droid.CustomMapRenderer, Byte_Rate.Android, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md58da1e510a7d21f8e64cdd8b1f8d8f39e.CustomMapRenderer
+Byte_Rate.Droid.CustomMapRenderer;md58da1e510a7d21f8e64cdd8b1f8d8f39e.CustomMapRenderer
+byte_rate.droid.CustomMapRenderer;md58da1e510a7d21f8e64cdd8b1f8d8f39e.CustomMapRenderer
 Byte_Rate.Droid.MainActivity, Byte_Rate.Android;md58da1e510a7d21f8e64cdd8b1f8d8f39e.MainActivity
 Byte_Rate.Droid.MainActivity, Byte_Rate.Android, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md58da1e510a7d21f8e64cdd8b1f8d8f39e.MainActivity
 Byte_Rate.Droid.MainActivity;md58da1e510a7d21f8e64cdd8b1f8d8f39e.MainActivity
