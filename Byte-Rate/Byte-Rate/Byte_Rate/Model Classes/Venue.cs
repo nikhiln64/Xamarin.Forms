@@ -17,6 +17,7 @@ namespace Byte_Rate.Model_Classes
         public int ratingSignals { get; set; }
         public bool allowMenuUrlEdit { get; set; }
         public BeenHere beenHere { get; set; }
+        public Hours hours { get; set; }
         public Photos photos { get; set; }
         public HearNow hereNow { get; set; }
     }

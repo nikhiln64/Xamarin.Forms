@@ -13,12 +13,10 @@
             <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="End" Padding="0,250,10,0">
                 <Button x:Name="getCurrentLocation" Clicked="getCurrentLocation_Clicked" WidthRequest="50" Image="restaurant.png" BackgroundColor="Transparent"/>
             </StackLayout>
+            <Button x:Name="restaurentButton" HorizontalOptions="Fill" VerticalOptions="EndAndExpand" IsVisible="False" BackgroundColor="WhiteSmoke" TextColor="Black" />
         </Grid>
-        
-            
         </ContentPage.Content>
 
-    
 
 
 

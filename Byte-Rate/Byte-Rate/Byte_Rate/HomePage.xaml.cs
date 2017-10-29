@@ -34,6 +34,7 @@ namespace Byte_Rate
 
         private async Task GetCurrentLocationAsync()
         {
+            
             MyMap.Pins.Clear();
             var locator = CrossGeolocator.Current;
             locator.DesiredAccuracy = 1;
@@ -62,6 +63,24 @@ namespace Byte_Rate
                     {
                         Position = new Xamarin.Forms.Maps.Position(item.venue.location.lat, item.venue.location.lng),
                         Label = item.venue.name
+                    };
+                    pin.Clicked += (object sender, EventArgs e) =>
+                    {
+                        restaurentButton.IsVisible = true;
+                        string isOpen = "Closed";
+                        if (item.venue.hours != null)
+                        {
+                            if (item.venue.hours.isOpen)
+                            {
+                                isOpen = "Open";
+                            }
+                        }
+                        else {
+                            isOpen = "Timings TBD";
+                        }
+                        restaurentButton.FontAttributes = FontAttributes.Bold;
+                        restaurentButton.Font = Font.SystemFontOfSize(NamedSize.Large);
+                        restaurentButton.Text = item.venue.name + "\n Rating: " +item.venue.rating +"\n"+isOpen;
                     };
                     pins.Add(pin);
                 }
