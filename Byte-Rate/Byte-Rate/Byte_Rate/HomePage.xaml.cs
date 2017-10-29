@@ -11,12 +11,14 @@ using Xamarin.Forms.Xaml;
 using Plugin.Geolocator.Abstractions;
 using Newtonsoft.Json;
 using System.Net.Http;
+using Byte_Rate.CustomRenderer;
 
 namespace Byte_Rate
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class HomePage : ContentPage
     {
+        List<CustomPin> customPins;
         public HomePage ()
 		{
 			InitializeComponent ();
@@ -25,62 +27,57 @@ namespace Byte_Rate
 
         private void Init()
         {
-            Task.Run(async () => {
-                 await GetCurrentLocationAsync();
+            Task.Run(async () =>
+            {
+                await GetCurrentLocationAsync();
             });
         }
 
-        
+
 
         private async Task GetCurrentLocationAsync()
         {
-            
-            MyMap.Pins.Clear();
-            var locator = CrossGeolocator.Current;
-            locator.DesiredAccuracy = 1;
-            TimeSpan ts = new TimeSpan((Int32)10000);
-            var position = await locator.GetPositionAsync(timeout: ts);
-            MyMap.MoveToRegion(MapSpan.FromCenterAndRadius(new Xamarin.Forms.Maps.Position(position.Latitude, position.Longitude), Distance.FromMiles(1)));
-            var pin = new Pin()
+            //myMap.Pins.Clear();
+            var position = new Plugin.Geolocator.Abstractions.Position(await GetPositionAsync());
+            myMap.MoveToRegion(MapSpan.FromCenterAndRadius(new Xamarin.Forms.Maps.Position(position.Latitude, position.Longitude), Distance.FromMiles(1)));
+            var pin = new CustomPin()
             {
                 Position = new Xamarin.Forms.Maps.Position(position.Latitude, position.Longitude),
-                Label = "You"
+                Label = "You",
+                name = "You"
             };
-            MyMap.Pins.Add(pin);
-            NearByRestaurents placesApiQueryResponse = await GetNeraByRestaurentsAsync(position);
-            List<Pin> pins = GetPins(placesApiQueryResponse);
-            foreach (Pin eachPin in pins) {
-                MyMap.Pins.Add(eachPin);
-            }
+            myMap.CustomPins = new List<CustomPin> { pin };
+            myMap.Pins.Add(pin);
         }
 
-        private List<Pin> GetPins(NearByRestaurents placesApiQueryResponse)
+        private List<CustomPin> GetPins(NearByRestaurents placesApiQueryResponse)
         {
-            List<Pin> pins = new List<Pin>();
+            List<CustomPin> pins = new List<CustomPin>();
             foreach (Groups groups in placesApiQueryResponse.response.groups){
                 foreach (Items item in groups.items) {
-                    var pin = new Pin()
+                    string isOpen = "Closed";
+                    if (item.venue.hours != null)
+                    {
+                        if (item.venue.hours.isOpen)
+                        {
+                            isOpen = "Open";
+                        }
+                    }
+                    else
+                    {
+                        isOpen = "Timings TBD";
+                    }
+                    var pin = new CustomPin()
                     {
                         Position = new Xamarin.Forms.Maps.Position(item.venue.location.lat, item.venue.location.lng),
-                        Label = item.venue.name
+                        Label = item.venue.name,
+                        name = item.venue.name,
+                        rating = item.venue.rating,
+                        available = isOpen
                     };
                     pin.Clicked += (object sender, EventArgs e) =>
                     {
-                        restaurentButton.IsVisible = true;
-                        string isOpen = "Closed";
-                        if (item.venue.hours != null)
-                        {
-                            if (item.venue.hours.isOpen)
-                            {
-                                isOpen = "Open";
-                            }
-                        }
-                        else {
-                            isOpen = "Timings TBD";
-                        }
-                        restaurentButton.FontAttributes = FontAttributes.Bold;
-                        restaurentButton.Font = Font.SystemFontOfSize(NamedSize.Large);
-                        restaurentButton.Text = item.venue.name + "\n Rating: " +item.venue.rating +"\n"+isOpen;
+                        Restaurent_Button_Clicked(sender, e);
                     };
                     pins.Add(pin);
                 }
@@ -112,9 +109,25 @@ namespace Byte_Rate
             Navigation.PushAsync(new RestaurentPage());
         }
 
+
+        private async Task<Plugin.Geolocator.Abstractions.Position> GetPositionAsync() {
+            var locator = CrossGeolocator.Current;
+            locator.DesiredAccuracy = 1;
+            TimeSpan ts = new TimeSpan((Int32)10000);
+            var position = await locator.GetPositionAsync(timeout: ts);
+            return position;
+        }
+
         private async void getCurrentLocation_Clicked(object sender, EventArgs e)
         {
             await GetCurrentLocationAsync();
+            var position = new Plugin.Geolocator.Abstractions.Position(await GetPositionAsync());
+            NearByRestaurents placesApiQueryResponse = await GetNeraByRestaurentsAsync(position);
+            List<CustomPin> pins = GetPins(placesApiQueryResponse);
+            foreach (CustomPin eachPin in pins)
+            {
+                myMap.Pins.Add(eachPin);
+            }
         }
     }
 }

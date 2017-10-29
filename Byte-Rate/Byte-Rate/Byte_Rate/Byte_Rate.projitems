@@ -16,6 +16,8 @@
       <DependentUpon>ByteAndRatePage.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)CustomRenderer\CustomMap.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)CustomRenderer\CustomPin.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)FavouritesPage.xaml.cs">
       <DependentUpon>FavouritesPage.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -199,5 +201,8 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)CustomRenderer\" />
   </ItemGroup>
 </Project>
