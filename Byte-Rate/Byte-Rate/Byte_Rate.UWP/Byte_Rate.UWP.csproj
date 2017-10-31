@@ -125,6 +125,8 @@
     <AndroidResource Include="Assets\phone.png" />
     <AndroidResource Include="Assets\mylocation.png" />
     <BundleResource Include="Assets\restaurant.png" />
+    <AndroidResource Include="Assets\placepin.png" />
+    <AndroidResource Include="Assets\personpin.png" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-100.png" />
     <Content Include="Assets\LockScreenLogo.scale-125.png" />

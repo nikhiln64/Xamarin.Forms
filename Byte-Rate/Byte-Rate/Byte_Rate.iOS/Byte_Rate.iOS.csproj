@@ -225,6 +225,12 @@
   <ItemGroup>
     <BundleResource Include="Resources\restaurant.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\placepin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\personpin.png" />
+  </ItemGroup>
   <Import Project="..\Byte_Rate\Byte_Rate.projitems" Label="Shared" Condition="Exists('..\Byte_Rate\Byte_Rate.projitems')" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

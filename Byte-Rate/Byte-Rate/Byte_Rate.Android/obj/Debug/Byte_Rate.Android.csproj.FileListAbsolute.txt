@@ -120,7 +120,11 @@ C:\Users\Nikki\source\repos\Byte-Rate\Byte-Rate\Byte_Rate.Android\obj\Debug\res\
 C:\Users\Nikki\source\repos\Byte-Rate\Byte-Rate\Byte_Rate.Android\obj\Debug\res\drawable\restaurant.png
 C:\Users\Nikki\source\repos\Byte-Rate\Byte-Rate\Byte_Rate.Android\obj\Debug\R.cs.flag
 C:\Users\Nikki\source\repos\Byte-Rate\Byte-Rate\Byte_Rate.Android\obj\Debug\uploadflags.txt
+C:\Users\Nikki\source\repos\Byte-Rate\Byte-Rate\Byte_Rate.Android\obj\Debug\res\drawable\placepin.png
+C:\Users\Nikki\source\repos\Byte-Rate\Byte-Rate\Byte_Rate.Android\obj\Debug\res\drawable\personpin.png
 C:\Users\Nikki\source\repos\Byte-Rate\Byte-Rate\Byte_Rate.Android\obj\Debug\Byte_Rate.Android.csprojResolveAssemblyReference.cache
+C:\Users\Nikki\source\repos\Byte-Rate\Byte-Rate\Byte_Rate.Android\obj\Debug\res\layout\xamarinmapinfowindow.xml
+C:\Users\Nikki\source\repos\Byte-Rate\Byte-Rate\Byte_Rate.Android\obj\Debug\res\layout\mapinfowindow.xml
 C:\Users\Nikki\source\repos\Byte-Rate\Byte-Rate\Byte_Rate.Android\bin\Debug\Byte_Rate.Android.dll.mdb
 C:\Users\Nikki\source\repos\Byte-Rate\Byte-Rate\Byte_Rate.Android\obj\Debug\android\assets\Byte_Rate.Android.dll.mdb
 C:\Users\Nikki\source\repos\Byte-Rate\Byte-Rate\Byte_Rate.Android\obj\Debug\android\assets\FormsViewGroup.dll.mdb

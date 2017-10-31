@@ -123,8 +123,8 @@ namespace Byte_Rate
             await GetCurrentLocationAsync();
             var position = new Plugin.Geolocator.Abstractions.Position(await GetPositionAsync());
             NearByRestaurents placesApiQueryResponse = await GetNeraByRestaurentsAsync(position);
-            List<CustomPin> pins = GetPins(placesApiQueryResponse);
-            foreach (CustomPin eachPin in pins)
+            myMap.CustomPins = GetPins(placesApiQueryResponse);
+            foreach (CustomPin eachPin in myMap.CustomPins)
             {
                 myMap.Pins.Add(eachPin);
             }
