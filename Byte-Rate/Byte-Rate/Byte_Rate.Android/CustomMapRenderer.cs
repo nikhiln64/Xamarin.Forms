@@ -55,7 +55,7 @@ namespace Byte_Rate.Droid
             marker.SetPosition(new LatLng(pin.Position.Latitude, pin.Position.Longitude));
             marker.SetTitle(pin.Label);
             marker.SetSnippet(pin.Address);
-            marker.SetIcon(BitmapDescriptorFactory.FromResource(Resource.Drawable.home));
+            marker.SetIcon(BitmapDescriptorFactory.FromResource(Resource.Drawable.placepin));
             return marker;
         }
 
@@ -89,17 +89,17 @@ namespace Byte_Rate.Droid
                     throw new Exception("Custom pin not found");
                 }
 
-                if (customPin.name == "Xamarin")
+                if (customPin.name == "You")
                 {
-                    view = inflater.Inflate(Resource.Drawable.home, null);
+                    view = inflater.Inflate(Resource.Layout.XamarinMapInfoWindow, null);
                 }
                 else
                 {
-                    view = inflater.Inflate(Resource.Drawable.home, null);
+                    view = inflater.Inflate(Resource.Layout.MapInfoWindow, null);
                 }
 
-                var infoTitle = view.FindViewById<TextView>(Resource.Drawable.home);
-                var infoSubtitle = view.FindViewById<TextView>(Resource.Drawable.home);
+                var infoTitle = view.FindViewById<TextView>(Resource.Id.InfoWindowTitle);
+                var infoSubtitle = view.FindViewById<TextView>(Resource.Id.InfoWindowTitle);
 
                 if (infoTitle != null)
                 {
