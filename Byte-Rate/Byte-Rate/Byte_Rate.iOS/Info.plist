@@ -72,5 +72,9 @@
 		<string>MKDirectionsModeTrain</string>
 		<string>MKDirectionsModeOther</string>
 	</array>
+  <string>LaunchScreen</string>
+  <key>NSLocationWhenInUseUsageDescription</key>
+  <string>This app needs access location when open and in the background.</string>
+ 
 </dict>
 </plist>

@@ -126,3 +126,5 @@ C:\Users\Nikki\source\repos\Byte-Rate\Byte-Rate\Byte_Rate.iOS\obj\iPhone\Debug\o
 C:\Users\Nikki\source\repos\Byte-Rate\Byte-Rate\Byte_Rate.iOS\obj\iPhone\Debug\optimized\mylocation.png
 C:\Users\Nikki\source\repos\Byte-Rate\Byte-Rate\Byte_Rate.iOS\obj\iPhone\Debug\optimized\restaurant.png
 C:\Users\Nikki\source\repos\Byte-Rate\Byte-Rate\Byte_Rate.iOS\obj\iPhone\Debug\optimized\
+C:\Users\Nikki\source\repos\Byte-Rate\Byte-Rate\Byte_Rate.iOS\obj\iPhone\Debug\optimized\placepin.png
+C:\Users\Nikki\source\repos\Byte-Rate\Byte-Rate\Byte_Rate.iOS\obj\iPhone\Debug\optimized\personpin.png

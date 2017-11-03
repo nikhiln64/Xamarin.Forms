@@ -2462,7 +2462,7 @@
           "lib/portable-net45+win8+wpa81+wp8/TK.CustomMap.dll": {}
         }
       },
-      "Xam.Plugin.Geolocator/4.1.1": {
+      "Xam.Plugin.Geolocator/4.1.2": {
         "type": "package",
         "compile": {
           "lib/UAP10/Plugin.Geolocator.Abstractions.dll": {},
@@ -5027,7 +5027,7 @@
           "lib/portable-net45+win8+wpa81+wp8/TK.CustomMap.dll": {}
         }
       },
-      "Xam.Plugin.Geolocator/4.1.1": {
+      "Xam.Plugin.Geolocator/4.1.2": {
         "type": "package",
         "compile": {
           "lib/UAP10/Plugin.Geolocator.Abstractions.dll": {},
@@ -7628,7 +7628,7 @@
           "lib/portable-net45+win8+wpa81+wp8/TK.CustomMap.dll": {}
         }
       },
-      "Xam.Plugin.Geolocator/4.1.1": {
+      "Xam.Plugin.Geolocator/4.1.2": {
         "type": "package",
         "compile": {
           "lib/UAP10/Plugin.Geolocator.Abstractions.dll": {},
@@ -10202,7 +10202,7 @@
           "lib/portable-net45+win8+wpa81+wp8/TK.CustomMap.dll": {}
         }
       },
-      "Xam.Plugin.Geolocator/4.1.1": {
+      "Xam.Plugin.Geolocator/4.1.2": {
         "type": "package",
         "compile": {
           "lib/UAP10/Plugin.Geolocator.Abstractions.dll": {},
@@ -12812,7 +12812,7 @@
           "lib/portable-net45+win8+wpa81+wp8/TK.CustomMap.dll": {}
         }
       },
-      "Xam.Plugin.Geolocator/4.1.1": {
+      "Xam.Plugin.Geolocator/4.1.2": {
         "type": "package",
         "compile": {
           "lib/UAP10/Plugin.Geolocator.Abstractions.dll": {},
@@ -15386,7 +15386,7 @@
           "lib/portable-net45+win8+wpa81+wp8/TK.CustomMap.dll": {}
         }
       },
-      "Xam.Plugin.Geolocator/4.1.1": {
+      "Xam.Plugin.Geolocator/4.1.2": {
         "type": "package",
         "compile": {
           "lib/UAP10/Plugin.Geolocator.Abstractions.dll": {},
@@ -17996,7 +17996,7 @@
           "lib/portable-net45+win8+wpa81+wp8/TK.CustomMap.dll": {}
         }
       },
-      "Xam.Plugin.Geolocator/4.1.1": {
+      "Xam.Plugin.Geolocator/4.1.2": {
         "type": "package",
         "compile": {
           "lib/UAP10/Plugin.Geolocator.Abstractions.dll": {},
@@ -24864,10 +24864,10 @@
         "tk.custommap.nuspec"
       ]
     },
-    "Xam.Plugin.Geolocator/4.1.1": {
-      "sha512": "WGCSB6+9eK3/Ft/EHHH5BVniFKRGvQTNMO5cM/JNU1ITWN2sP8HnSSaZM+/wZ9bURjaG9mMoJp/ezG6yJ5tIbA==",
+    "Xam.Plugin.Geolocator/4.1.2": {
+      "sha512": "ciEiUKO9s/1zM+n78wITtUXrlhUZWQRpID5o3NzYiPMC85uExf93Lscog+x8fopciIDCA2mJMN3lyzJAU+pDJA==",
       "type": "package",
-      "path": "xam.plugin.geolocator/4.1.1",
+      "path": "xam.plugin.geolocator/4.1.2",
       "files": [
         "lib/MonoAndroid10/Plugin.Geolocator.Abstractions.dll",
         "lib/MonoAndroid10/Plugin.Geolocator.Abstractions.pdb",
@@ -24901,7 +24901,7 @@
         "lib/netstandard1.0/Plugin.Geolocator.pdb",
         "lib/netstandard1.0/Plugin.Geolocator.xml",
         "readme.txt",
-        "xam.plugin.geolocator.4.1.1.nupkg.sha512",
+        "xam.plugin.geolocator.4.1.2.nupkg.sha512",
         "xam.plugin.geolocator.nuspec"
       ]
     },
@@ -25165,7 +25165,7 @@
       "Google.Apis >= 1.29.2",
       "Microsoft.NETCore.UniversalWindowsPlatform >= 5.2.2",
       "TK.CustomMap >= 1.5.1",
-      "Xam.Plugin.Geolocator >= 4.1.1",
+      "Xam.Plugin.Geolocator >= 4.1.2",
       "Xamarin.Forms >= 2.4.0.280",
       "Xamarin.Forms.Maps >= 2.4.0.282"
     ],
@@ -25195,13 +25195,10 @@
     "dependencies": {
       "Google.Apis": "1.29.2",
       "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.2",
-      "Xam.Plugin.Geolocator": "4.1.1",
+      "TK.CustomMap": "1.5.1",
+      "Xam.Plugin.Geolocator": "[4.1.2, )",
       "Xamarin.Forms": "2.4.0.280",
-      "Xamarin.Forms.Maps": "2.4.0.282",
-      "TK.CustomMap": {
-        "target": "Package",
-        "version": "[1.5.1, )"
-      }
+      "Xamarin.Forms.Maps": "2.4.0.282"
     },
     "frameworks": {
       "uap10.0.10586": {}

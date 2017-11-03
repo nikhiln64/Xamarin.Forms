@@ -123,8 +123,6 @@ C:\Users\Nikki\source\repos\Byte-Rate\Byte-Rate\Byte_Rate.Android\obj\Debug\uplo
 C:\Users\Nikki\source\repos\Byte-Rate\Byte-Rate\Byte_Rate.Android\obj\Debug\res\drawable\placepin.png
 C:\Users\Nikki\source\repos\Byte-Rate\Byte-Rate\Byte_Rate.Android\obj\Debug\res\drawable\personpin.png
 C:\Users\Nikki\source\repos\Byte-Rate\Byte-Rate\Byte_Rate.Android\obj\Debug\Byte_Rate.Android.csprojResolveAssemblyReference.cache
-C:\Users\Nikki\source\repos\Byte-Rate\Byte-Rate\Byte_Rate.Android\obj\Debug\res\layout\xamarinmapinfowindow.xml
-C:\Users\Nikki\source\repos\Byte-Rate\Byte-Rate\Byte_Rate.Android\obj\Debug\res\layout\mapinfowindow.xml
 C:\Users\Nikki\source\repos\Byte-Rate\Byte-Rate\Byte_Rate.Android\bin\Debug\Byte_Rate.Android.dll.mdb
 C:\Users\Nikki\source\repos\Byte-Rate\Byte-Rate\Byte_Rate.Android\obj\Debug\android\assets\Byte_Rate.Android.dll.mdb
 C:\Users\Nikki\source\repos\Byte-Rate\Byte-Rate\Byte_Rate.Android\obj\Debug\android\assets\FormsViewGroup.dll.mdb
@@ -134,3 +132,5 @@ C:\Users\Nikki\source\repos\Byte-Rate\Byte-Rate\Byte_Rate.Android\obj\Debug\andr
 C:\Users\Nikki\source\repos\Byte-Rate\Byte-Rate\Byte_Rate.Android\obj\Debug\android\assets\Xamarin.Forms.Platform.Android.dll.mdb
 C:\Users\Nikki\source\repos\Byte-Rate\Byte-Rate\Byte_Rate.Android\obj\Debug\android\assets\Xamarin.Forms.Xaml.dll.mdb
 C:\Users\Nikki\source\repos\Byte-Rate\Byte-Rate\Byte_Rate.Android\obj\Debug\android\assets\Xamarin.iOS.dll.mdb
+C:\Users\Nikki\source\repos\Byte-Rate\Byte-Rate\Byte_Rate.Android\obj\Debug\res\layout\restaurentdetailsinfo.xml
+C:\Users\Nikki\source\repos\Byte-Rate\Byte-Rate\Byte_Rate.Android\obj\Debug\res\layout\userinfowindow.xml

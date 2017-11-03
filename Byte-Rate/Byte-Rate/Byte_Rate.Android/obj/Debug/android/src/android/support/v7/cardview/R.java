@@ -3322,6 +3322,8 @@ containing a value of this type.
         public static final int trial=0x7f020134;
     }
     public static final class id {
+        public static final int InfoWindowSubtitle=0x7f0b00bd;
+        public static final int InfoWindowTitle=0x7f0b00bc;
         public static final int action0=0x7f0b00a8;
         public static final int action_bar=0x7f0b006e;
         public static final int action_bar_activity_content=0x7f0b0001;
@@ -3404,7 +3406,7 @@ containing a value of this type.
         public static final int line3=0x7f0b00b9;
         public static final int listMode=0x7f0b001c;
         public static final int list_item=0x7f0b0052;
-        public static final int masked=0x7f0b00bf;
+        public static final int masked=0x7f0b00c1;
         public static final int media_actions=0x7f0b00ab;
         public static final int middle=0x7f0b002d;
         public static final int mini=0x7f0b0048;
@@ -3472,7 +3474,7 @@ containing a value of this type.
         public static final int showCustom=0x7f0b0020;
         public static final int showHome=0x7f0b0021;
         public static final int showTitle=0x7f0b0022;
-        public static final int sliding_tabs=0x7f0b00bc;
+        public static final int sliding_tabs=0x7f0b00be;
         public static final int smallLabel=0x7f0b007d;
         public static final int snackbar_action=0x7f0b0084;
         public static final int snackbar_text=0x7f0b0083;
@@ -3500,7 +3502,7 @@ containing a value of this type.
         public static final int title=0x7f0b0054;
         public static final int titleDividerNoCustom=0x7f0b0063;
         public static final int title_template=0x7f0b0061;
-        public static final int toolbar=0x7f0b00bd;
+        public static final int toolbar=0x7f0b00bf;
         public static final int top=0x7f0b0034;
         public static final int topPanel=0x7f0b0060;
         public static final int touch_outside=0x7f0b0081;
@@ -3509,7 +3511,7 @@ containing a value of this type.
         public static final int up=0x7f0b0009;
         public static final int useLogo=0x7f0b0023;
         public static final int view_offset_helper=0x7f0b000e;
-        public static final int visible=0x7f0b00be;
+        public static final int visible=0x7f0b00c0;
         public static final int volume_item_container=0x7f0b009d;
         public static final int wide=0x7f0b0018;
         public static final int withText=0x7f0b0032;
@@ -3576,40 +3578,35 @@ containing a value of this type.
         public static final int design_navigation_menu=0x7f030026;
         public static final int design_navigation_menu_item=0x7f030027;
         public static final int design_text_input_password_icon=0x7f030028;
-        public static final int mapinfowindow=0x7f030029;
-        public static final int mr_chooser_dialog=0x7f03002a;
-        public static final int mr_chooser_list_item=0x7f03002b;
-        public static final int mr_controller_material_dialog_b=0x7f03002c;
-        public static final int mr_controller_volume_item=0x7f03002d;
-        public static final int mr_playback_control=0x7f03002e;
-        public static final int mr_volume_control=0x7f03002f;
-        public static final int notification_action=0x7f030030;
-        public static final int notification_action_tombstone=0x7f030031;
-        public static final int notification_media_action=0x7f030032;
-        public static final int notification_media_cancel_action=0x7f030033;
-        public static final int notification_template_big_media=0x7f030034;
-        public static final int notification_template_big_media_custom=0x7f030035;
-        public static final int notification_template_big_media_narrow=0x7f030036;
-        public static final int notification_template_big_media_narrow_custom=0x7f030037;
-        public static final int notification_template_custom_big=0x7f030038;
-        public static final int notification_template_icon_group=0x7f030039;
-        public static final int notification_template_lines_media=0x7f03003a;
-        public static final int notification_template_media=0x7f03003b;
-        public static final int notification_template_media_custom=0x7f03003c;
-        public static final int notification_template_part_chronometer=0x7f03003d;
-        public static final int notification_template_part_time=0x7f03003e;
+        public static final int mr_chooser_dialog=0x7f030029;
+        public static final int mr_chooser_list_item=0x7f03002a;
+        public static final int mr_controller_material_dialog_b=0x7f03002b;
+        public static final int mr_controller_volume_item=0x7f03002c;
+        public static final int mr_playback_control=0x7f03002d;
+        public static final int mr_volume_control=0x7f03002e;
+        public static final int notification_action=0x7f03002f;
+        public static final int notification_action_tombstone=0x7f030030;
+        public static final int notification_media_action=0x7f030031;
+        public static final int notification_media_cancel_action=0x7f030032;
+        public static final int notification_template_big_media=0x7f030033;
+        public static final int notification_template_big_media_custom=0x7f030034;
+        public static final int notification_template_big_media_narrow=0x7f030035;
+        public static final int notification_template_big_media_narrow_custom=0x7f030036;
+        public static final int notification_template_custom_big=0x7f030037;
+        public static final int notification_template_icon_group=0x7f030038;
+        public static final int notification_template_lines_media=0x7f030039;
+        public static final int notification_template_media=0x7f03003a;
+        public static final int notification_template_media_custom=0x7f03003b;
+        public static final int notification_template_part_chronometer=0x7f03003c;
+        public static final int notification_template_part_time=0x7f03003d;
+        public static final int restaurentdetailsinfo=0x7f03003e;
         public static final int select_dialog_item_material=0x7f03003f;
         public static final int select_dialog_multichoice_material=0x7f030040;
         public static final int select_dialog_singlechoice_material=0x7f030041;
         public static final int support_simple_spinner_dropdown_item=0x7f030042;
         public static final int tabbar=0x7f030043;
         public static final int toolbar=0x7f030044;
-        public static final int xamarinmapinfowindow=0x7f030045;
-    }
-    public static final class name {
-        public static final int InfoWindowButton=0x7f0e0002;
-        public static final int InfoWindowSubtitle=0x7f0e0001;
-        public static final int InfoWindowTitle=0x7f0e0000;
+        public static final int userinfowindow=0x7f030045;
     }
     public static final class string {
         public static final int abc_action_bar_home_description=0x7f080026;
