@@ -68,11 +68,11 @@
     <Reference Include="Plugin.CurrentActivity, Version=1.0.1.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Plugin.CurrentActivity.1.0.1\lib\MonoAndroid10\Plugin.CurrentActivity.dll</HintPath>
     </Reference>
-    <Reference Include="Plugin.Geolocator, Version=4.1.1.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Xam.Plugin.Geolocator.4.1.1\lib\MonoAndroid10\Plugin.Geolocator.dll</HintPath>
+    <Reference Include="Plugin.Geolocator, Version=4.1.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Xam.Plugin.Geolocator.4.1.2\lib\MonoAndroid10\Plugin.Geolocator.dll</HintPath>
     </Reference>
-    <Reference Include="Plugin.Geolocator.Abstractions, Version=4.1.1.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Xam.Plugin.Geolocator.4.1.1\lib\MonoAndroid10\Plugin.Geolocator.Abstractions.dll</HintPath>
+    <Reference Include="Plugin.Geolocator.Abstractions, Version=4.1.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Xam.Plugin.Geolocator.4.1.2\lib\MonoAndroid10\Plugin.Geolocator.Abstractions.dll</HintPath>
     </Reference>
     <Reference Include="Plugin.Permissions, Version=2.1.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Plugin.Permissions.2.1.0\lib\MonoAndroid10\Plugin.Permissions.dll</HintPath>
@@ -189,10 +189,10 @@
     <None Include="packages.config" />
     <None Include="Resources\AboutResources.txt" />
     <None Include="Assets\AboutAssets.txt" />
-    <AndroidResource Include="Resources\layout\XamarinMapInfoWindow.axml">
+    <AndroidResource Include="Resources\layout\RestaurentDetailsInfo.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
-    <AndroidResource Include="Resources\layout\MapInfoWindow.axml">
+    <AndroidResource Include="Resources\layout\UserInfoWindow.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\Tabbar.axml" />
@@ -201,7 +201,9 @@
     <AndroidResource Include="Resources\Drawable\Icon.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\layout\Toolbar.axml" />
+    <AndroidResource Include="Resources\layout\Toolbar.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
     <AndroidResource Include="Resources\values\styles.xml" />
   </ItemGroup>
   <ItemGroup>

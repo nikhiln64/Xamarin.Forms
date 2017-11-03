@@ -55,7 +55,13 @@ namespace Byte_Rate.Droid
             marker.SetPosition(new LatLng(pin.Position.Latitude, pin.Position.Longitude));
             marker.SetTitle(pin.Label);
             marker.SetSnippet(pin.Address);
-            marker.SetIcon(BitmapDescriptorFactory.FromResource(Resource.Drawable.placepin));
+            if (pin.Label == "You")
+            {
+                marker.SetIcon(BitmapDescriptorFactory.FromResource(Resource.Drawable.personpin));
+            }
+            else {
+                marker.SetIcon(BitmapDescriptorFactory.FromResource(Resource.Drawable.placepin));
+            }
             return marker;
         }
 
@@ -91,26 +97,35 @@ namespace Byte_Rate.Droid
 
                 if (customPin.name == "You")
                 {
-                    view = inflater.Inflate(Resource.Layout.XamarinMapInfoWindow, null);
+                    view = inflater.Inflate(Resource.Layout.UserInfoWindow, null);
+                    var infoTitle = view.FindViewById<TextView>(Resource.Id.InfoWindowTitle);
+
+                    if (infoTitle != null)
+                    {
+                        infoTitle.Text = customPin.name;
+                    }
+
+                    return view;
                 }
                 else
                 {
-                    view = inflater.Inflate(Resource.Layout.MapInfoWindow, null);
+                    view = inflater.Inflate(Resource.Layout.RestaurentDetailsInfo, null);
+                    var infoTitle = view.FindViewById<TextView>(Resource.Id.InfoWindowTitle);
+                    var infoSubtitle = view.FindViewById<TextView>(Resource.Id.InfoWindowSubtitle);
+
+                    if (infoTitle != null)
+                    {
+                        infoTitle.Text = customPin.name;
+                    }
+                    if (infoSubtitle != null)
+                    {
+                        infoSubtitle.Text = "Rating: " + customPin.rating + "  " + customPin.available;
+                    }
+
+                    return view;
                 }
 
-                var infoTitle = view.FindViewById<TextView>(Resource.Id.InfoWindowTitle);
-                var infoSubtitle = view.FindViewById<TextView>(Resource.Id.InfoWindowTitle);
-
-                if (infoTitle != null)
-                {
-                    infoTitle.Text = marker.Title;
-                }
-                if (infoSubtitle != null)
-                {
-                    infoSubtitle.Text = marker.Snippet;
-                }
-
-                return view;
+                
             }
             return null;
         }
