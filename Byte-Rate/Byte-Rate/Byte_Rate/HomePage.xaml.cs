@@ -12,6 +12,7 @@ using Newtonsoft.Json;
 using System.Net.Http;
 using Byte_Rate.CustomRenderer;
 using Plugin.Geolocator;
+using Xamarin.Forms.Internals;
 
 namespace Byte_Rate
 {
@@ -19,6 +20,8 @@ namespace Byte_Rate
 	public partial class HomePage : ContentPage
     {
         List<CustomPin> customPins = new List<CustomPin>();
+        private Plugin.Geolocator.Abstractions.Position _position;
+
         public HomePage ()
 		{
 			InitializeComponent ();
@@ -117,10 +120,10 @@ namespace Byte_Rate
 
         private async Task<Plugin.Geolocator.Abstractions.Position> GetPositionAsync() {
             var locator = CrossGeolocator.Current;
-            locator.DesiredAccuracy = 1;
+            locator.DesiredAccuracy = 50;
             TimeSpan ts = new TimeSpan((Int32)10000);
-            var position = await locator.GetPositionAsync(timeout: ts);
-            return position;
+            _position = await locator.GetPositionAsync(timeout: ts);
+            return _position;
         }
 
         private async void getCurrentLocation_Clicked(object sender, EventArgs e)

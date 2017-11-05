@@ -22,9 +22,8 @@ namespace Byte_Rate.iOS
 		//
 		public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 		{
-			global::Xamarin.Forms.Forms.Init ();
+            global::Xamarin.Forms.Forms.Init();
             global::Xamarin.FormsMaps.Init();
-
             LoadApplication (new Byte_Rate.App ());
             return base.FinishedLaunching (app, options);
 		}
