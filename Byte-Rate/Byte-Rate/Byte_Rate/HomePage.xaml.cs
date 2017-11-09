@@ -16,15 +16,15 @@ using Xamarin.Forms.Internals;
 
 namespace Byte_Rate
 {
-	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class HomePage : ContentPage
+    [XamlCompilation(XamlCompilationOptions.Compile)]
+    public partial class HomePage : ContentPage
     {
         List<CustomPin> customPins = new List<CustomPin>();
         private Plugin.Geolocator.Abstractions.Position _position;
 
-        public HomePage ()
-		{
-			InitializeComponent ();
+        public HomePage()
+        {
+            InitializeComponent();
             Init();
         }
 
@@ -41,8 +41,9 @@ namespace Byte_Rate
         private async Task GetCurrentLocationAsync()
         {
             myMap.Pins.Clear();
-            if (myMap.CustomPins != null) {
-                 myMap.CustomPins.Clear();
+            if (myMap.CustomPins != null)
+            {
+                myMap.CustomPins.Clear();
             }
             var position = new Plugin.Geolocator.Abstractions.Position(await GetPositionAsync());
             myMap.MoveToRegion(MapSpan.FromCenterAndRadius(new Xamarin.Forms.Maps.Position(position.Latitude, position.Longitude), Distance.FromMiles(1)));
@@ -59,8 +60,10 @@ namespace Byte_Rate
 
         private void GetPins(NearByRestaurents placesApiQueryResponse)
         {
-            foreach (Groups groups in placesApiQueryResponse.response.groups){
-                foreach (Items item in groups.items) {
+            foreach (Groups groups in placesApiQueryResponse.response.groups)
+            {
+                foreach (Items item in groups.items)
+                {
                     string isOpen = "Closed";
                     if (item.venue.hours != null)
                     {
@@ -86,7 +89,7 @@ namespace Byte_Rate
                         Restaurent_Button_Clicked(sender, e);
                     };
                     customPins.Add(pin);
-                    
+
                     myMap.Pins.Add(pin);
                 }
             }
@@ -96,7 +99,7 @@ namespace Byte_Rate
         private async Task<NearByRestaurents> GetNeraByRestaurentsAsync(Plugin.Geolocator.Abstractions.Position position)
         {
             var client = new HttpClient();
-            var response = await client.GetStringAsync("https://api.foursquare.com/v2/venues/explore?ll=" + position.Latitude + "," +position.Longitude + "&client_id="+Constants.client_id +"&client_secret="+Constants.client_secret + "&v=20171025&section=food,drinks,coffee&limit=10");
+            var response = await client.GetStringAsync("https://api.foursquare.com/v2/venues/explore?ll=" + position.Latitude + "," + position.Longitude + "&client_id=" + Constants.client_id + "&client_secret=" + Constants.client_secret + "&v=20171025&section=food,drinks,coffee&limit=10");
             var result = JsonConvert.DeserializeObject<NearByRestaurents>(response);
             return result;
         }
@@ -118,11 +121,11 @@ namespace Byte_Rate
         }
 
 
-        private async Task<Plugin.Geolocator.Abstractions.Position> GetPositionAsync() {
+        private async Task<Plugin.Geolocator.Abstractions.Position> GetPositionAsync()
+        {
             var locator = CrossGeolocator.Current;
             locator.DesiredAccuracy = 50;
-            TimeSpan ts = new TimeSpan((Int32)10000);
-            _position = await locator.GetPositionAsync(timeout: ts);
+            _position = await locator.GetPositionAsync(timeout: TimeSpan.FromSeconds(10));
             return _position;
         }
 
